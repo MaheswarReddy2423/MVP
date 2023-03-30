@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BOSS</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="voice-assistant.png">
+	<style>
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 50vh;
+		}
+        .hidden {
+			display: none;
+		}
+	</style>
+</head>
+<body style="background-color: #cbd6b8;">
+    <div>
+        <h1 style="text-align: center;margin-top:50px;">BOSS - The Assistant</h1>
+    </div>
+	<div class="center">
+        
+		<button id="showElementBtn"><img width="200px" height="200px" src="main.png" alt=""> </button>
+	</div>
+    <div id="elementToDisplay" class="hidden">
+		<h1 style="text-align: center; margin-bottom: 100px;">BOSS is listening...</h1>
+	</div>
+    <div>
+        <p style="text-align: center;margin-top:50px;">Copyright @Mahesh 2023</p>
+    </div>
+    <script>
+        const showElementBtn = document.getElementById("showElementBtn");
+		const elementToDisplay = document.getElementById("elementToDisplay");
+
+		showElementBtn.addEventListener("click", function() {
+			elementToDisplay.classList.remove("hidden");
+		}
+        );
+
+    </script>
+</body>
+</html>
